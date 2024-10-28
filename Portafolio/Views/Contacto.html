@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/contacto.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "7CNF8Uw28h3YMKbhR",
+        });
+    })();
+    </script>
+    <title>Contactame</title>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"><img class="logo-img" src="../assets/logo.webp" alt=""></div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="../Views/Index.html">Inicio</a></li>
+            <li><a href="../Views/Servicios.html">Servicios</a></li>
+            <li><a href="../Views/Proyectos.html">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo"><img class="logo-img" src="../assets/logo.webp" alt=""></div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links" style="z-index: 99;">
+            <li><a href="../Views/Index.html" onclick="toggleMenu()">Inicio</a></li>
+            <li><a href="../Views/Servicios.html" onclick="toggleMenu()">Servicios</a></li>
+            <li><a href="../Views/Proyectos.html" onclick="toggleMenu()">Proyectos</a></li>
+            <li><a href="#contacto" onclick="toggleMenu()">Contacto</a></li>
+          </div>
+        </div>
+      </nav>
+    <div>
+        <form action="">
+    <div class="semi">
+    <div class="container">
+        <h2 class="title">Contactame</h2>
+        <div class="row100">
+            <div class="col">
+                <div class="inputbox">
+                    <input type="text" id="nombre" name="nombre" required>
+                    <span class="text">Nombre</span>
+                    <span class="line"></span>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="inputbox">
+                    <input type="text" id="correo" name="email" required>
+                    <span class="text">Correo</span>
+                    <span class="line"></span>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="inputbox textarea">
+                  <textarea id="mensaje" name="mensaje" required id=""></textarea>
+                    <span class="text">Mensaje</span>
+                    <span class="line"></span>
+                </div>
+            </div>
+            <input type="submit" onclick="sendEmail(event)" value="Enviar">
+        </div>
+    </div>
+    </div>
+    </form>
+</body>
+<script src="../Scripts/responsive.js"></script>
+<script src="../Scripts/email.js"></script>
+</html>

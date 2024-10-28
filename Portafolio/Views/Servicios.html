@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/servicios.css">
+    <title></title>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"><img class="logo-img" src="../assets/logo.webp" alt=""></div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="../Views/Index.html">Inicio</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="../Views/Proyectos.html">Proyectos</a></li>
+            <li><a href="../Views/Contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo"><img class="logo-img" src="../assets/logo.webp" alt=""></div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="../Views/Index.html">Inicio</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="../Views/Proyectos.html">Proyectos</a></li>
+            <li><a href="../Views/Contacto.html">Contacto</a></li>
+          </div>
+        </div>
+      </nav>
+
+    <section class="services" id="services">
+            <div class="title">
+                <span>Mis servicios</span>
+            </div>
+                
+                    
+            <div class="boxes">
+                <div class="box">
+                    <div class="icon-web"><i class="fa-solid fa-server"></i></div>
+                    <div class="topic">Desarrollo Backend</div>
+                    <p class="section__text__p1 p1">Implementación de APIs y sistemas  escalables, utilizando tecnologías como .NET  para asegurar un backend optimizado y seguro.</p>
+                </div>
+                <div class="box">
+                    <div class="icon-web"><i class="fa-solid fa-code"></i></div>
+                    <div class="topic">Desarrollo Frontend</div>
+                    <p class="section__text__p1">Creación de interfaces interactivas y amigables, empleando frameworks como Angular y Blazor o estaticas para mejorar la experiencia del usuario y accesibilidad.</p>
+                </div>
+                <div class="box">
+                    <div class="icon-web"><i class="fa-solid fa-cogs"></i></div>
+                    <div class="topic">Desarrollo Fullstack</div>
+                    <p class="section__text__p1">Soluciones completas de desarrollo tanto en frontend como backend, manejando toda la estructura de aplicaciones web desde el diseño hasta la implementación.</p>
+                </div>
+                <div class="box">
+                    <div class="icon-web"><i class="fa-solid fa-database"></i></div>
+                    <div class="topic">Diseño de Bases de Datos</div>
+                    <p class="section__text__p1">Modelado y diseño de bases de datos optimizadas, garantizando integridad y eficiencia en la gestión de datos con sistemas como SQL Server y MySQL.</p>
+                </div>
+            </div>
+
+          
+
+        </div>
+
+
+    </section>
+    <section id="contact" style="margin-top: 50px;">
+        <div class="contacto">
+            <h2 class="title" style="margin: 0 auto;">¿Qué proyectos puedo hacer por ti?</h2>
+            <div class="boxes">
+                <div class="project-item">
+                    <i class="fa-solid fa-briefcase icon-web"></i>
+                    <h3>Sistemas de Gestión Empresarial</h3>
+                    <p>Desarrollo de sistemas personalizados para gestionar inventarios, recursos humanos, y otras operaciones empresariales.</p>
+                </div>
+                <div class="project-item">
+                    <i class="fa-solid fa-shop icon-web"></i>
+                    <h3>Aplicaciones Web E-Commerce</h3>
+                    <p>Implementación de tiendas en línea integradas con pasarelas de pago seguras como PayPal o Stripe, además de administración de productos y clientes.</p>
+                </div>
+                <div class="project-item">
+                    <i class="fa-solid fa-hospital-user icon-web"></i>
+                    <h3>Plataformas de Salud Mental</h3>
+                    <p>Creación de aplicaciones centradas en bienestar y salud mental, con herramientas de seguimiento, interacción y gestión de usuarios.</p>
+                </div>
+                <div class="project-item">
+                    <i class="fa-solid fa-circle-info icon-web"></i>
+                    <h3>Paginas de informacion</h3>
+                    <p>Conjuntos de pagina sin servidor para presentacion o demostracion de lo que necesitas</p>
+                </div>
+            </div>
+            <p class="contact-link">¿Tienes un proyecto en mente? <a href="../Views/Contacto.html">Contáctame aquí</a> para discutir cómo puedo ayudarte.</p>
+        </div>
+    </section>
+</body>
+<script src="../Scripts/responsive.js"></script>
+</html>

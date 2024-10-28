@@ -1,0 +1,140 @@
+.services .boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.services .boxes .box{
+    margin: 20px 0;
+    width: calc(100%/3 - 20px);
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    cursor: default;
+    transition: all 0.4s ease;
+}
+.box:hover{
+    background-color: steelblue;
+    color: white;
+}
+.topic{
+    color: steelblue;
+    font-size: 1.5rem;
+}
+.services .boxes .box:hover .topic {
+    color: black; /* Cambia este color al que prefieras */
+}
+.services .boxes .box:hover .section__text__p1 {
+color: white;
+}
+.icon-web{
+    font-size: 2rem;
+}
+.contacto{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#contact {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contacto .title {
+    font-size: 2rem;
+    color: steelblue;
+    margin-bottom: 20px;
+}
+
+.contacto .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centra las columnas */
+    max-width: 1000px;
+    margin: auto;
+}
+
+.project-item {
+    width: calc(50% - 10px); /* Dos columnas */
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    text-align: center;
+}
+
+.project-item h3 {
+    font-size: 1.4rem;
+    color: steelblue;
+    margin: 10px 0;
+}
+
+.project-item p {
+    color: #666;
+}
+
+.project-item:hover {
+    background-color: steelblue;
+    color: white;
+}
+
+.project-item:hover h3,
+.project-item:hover p {
+    color: white;
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    .project-item {
+        width: 100%; /* Una columna en pantallas pequeñas */
+    }
+}
+
+.contact-link {
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
+
+.contact-link a {
+    color: white;
+    background-color: steelblue;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.contact-link a:hover {
+    background-color: darkblue;
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+
+.contact-link a:hover {
+    color: white;
+    text-decoration: none;
+}
+.boxes .project-item:hover h3{
+    color: black;
+}
+.boxes .project-item:hover p{
+    color: white;
+}
+@media (max-width:1000px){
+    .services .boxes .box{
+        width: calc(100% /2 - 20px);
+    }
+    #section{
+        margin-top: 10px;
+    }
+}
+@media (max-width:414px) {
+    .services .boxes .box{
+        width: 100%;
+    }
+}

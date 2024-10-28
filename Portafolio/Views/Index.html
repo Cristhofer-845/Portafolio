@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cristhofer Rivas Portfolio</title>
+    <link rel="stylesheet" href="../Css/style.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><img class="logo-img" src="../assets/logo.webp" alt=""></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Acerca</a></li>
+          <li><a href="#experience">Servicios</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="../Views/Aprendiendo.html">Aprendizaje</a></li>
+          <li><a href="../Views/Contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"><img class="logo-img" src="../assets/logo.webp" alt=""></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Acerca</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Servicios</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Proyectos</a></li>
+          <li><a href="../Views/Contacto.html" onclick="toggleMenu()">Contacto</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="https://i.pinimg.com/736x/ce/33/50/ce335035383f63a5b17418aabe046d82.jpg" alt="Cristhofer Rivas profile picture" style="border-radius: 50%;" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hola, Soy</p>
+        <h1 class="title">Cristhofer Rivas</h1>
+        <p class="section__text__p2">Backend Developer | Desarrollador .NET</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Cristhofer_Rivas_CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contacto 
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="../assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/cristhofer-rivas/'"
+          />
+          <img
+            src="../assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/CristhoferRivas/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Conoceme más</p>
+      <h1 class="title">Acerca de mi</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="https://i.pinimg.com/564x/26/69/9b/26699b4de98f657e14b8b0ff802aaede.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="../assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experiencia en proyectos</h3>
+              <p>1 año <br />Backend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="../assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Educacion</h3>
+              <p>Ingenieria en Sistemas<br /><strong> Evangelica de El Salvador</strong></p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Soy un Desarrollador Backend con experiencia <strong>Personal</strong> en .NET y en la creación de aplicaciones web.
+              Actualmente, estoy cursando una carrera en Ingeniería en Sistemas. He desarrollado proyectos personales y
+              mejorado mis habilidades a través de cursos en plataformas como Udemy. Estoy enfocado en entregar soluciones
+              de alta calidad usando .NET Core, ASP.NET MVC y otras tecnologías. Mi objetivo es seguir creciendo para
+              convertirme en un desarrollador full-stack.
+          </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Mis Tecnologias</p>
+      <h1 class="title">Servicios</h1>
+      <a class="btn btn-color-1" style="display: block; margin: 0 auto;text-align: center; text-decoration: none;" href="../Views/Servicios.html">Ver Mas</a>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container" style="text-align: center;">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="../assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Avanzado</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ASP.NET Core</h3>
+                  <p>Avanzado</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Entity Framework</h3>
+                  <p>Intermedio</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL Server</h3>
+                  <p>Intermedio</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>REST API Development</h3>
+                  <p>Basico</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend
+              Development
+            </h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="../assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Html</h3>
+                  <p>Avanzado</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Css</h3>
+                  <p>Intermedio</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermedio</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Intermedio</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" style="margin-top: 5rem;">
+      <p class="section__text__p1">Explora mis proyectos</p>
+      <h1 class="title">Proyectos Recientes</h1>
+        <a style="margin: 0 auto; display: block; text-align: center;text-decoration: none;" class="btn project-btn btn-color-2" href="Proyectos.html">Ver todos</a>
+     
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://i.pinimg.com/564x/0d/c1/81/0dc181f58202615ae3d228e9b444e6c1.jpg"
+                alt="Mental Space Project"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Mental Space</h2>
+            <p>ASP.NET Core MVC Salud Mental con historias,relatos y comentarios</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/CristhoferRivas/MentalSpace')"
+              >
+                Ver en GitHub
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://i.pinimg.com/564x/29/e9/ec/29e9ece63e7d3182267d851edf48f1c5.jpg"
+                alt="BTU Calculator Project"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">BTU Calculadora</h2>
+            <p>Html,Css,Js Calculadora de Btu para consumo de areas</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/CristhoferRivas/BTU-Calculator')"
+              >
+                Ver en Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://i.pinimg.com/564x/d4/43/c9/d443c970c669eb945ff047dd6dbd171b.jpg"
+                alt="E-Commerce System Project"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">E-Commerce System</h2>
+            <p>ASP.NET Core MVC Tienda de libros online</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/CristhoferRivas/E-Commerce-System')"
+              >
+                Ver en github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>    
+    </section>
+    <footer>
+      <p> &copy; 2024 Cristhofer Rivas</p>
+    </footer>
+
+  </body>  
+    <script src="../Scripts/responsive.js">
+
+    </script>
+</html>

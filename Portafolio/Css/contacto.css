@@ -1,0 +1,130 @@
+.semi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    padding: 20px;
+}
+
+.container h2 {
+    width: 100%;
+    color: steelblue;
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+.container .row {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.container .row100 .col {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+}
+
+.container .row100 .inputbox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: black;
+}
+
+.container .row100 .inputbox input,
+.container .textarea textarea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    z-index: 1;
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.container .row100 .inputbox input:focus + .text,
+.container .row100 .inputbox input:focus + .text {
+    top: -35px;
+    left: -10px;
+}
+
+.line {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: steelblue;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.container .row100 .inputbox input:focus ~ .line,
+.container .row100 .inputbox input:valid ~ .line {
+    height: 100%;
+}
+
+.textarea {
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+    position: relative;
+    width: 100%;
+    min-height: 100px; /* Cambiado a min-height */
+    padding: 10px 0;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+.textarea textarea {
+    min-height: 100%; /* Asegúrate de que ocupe el espacio */
+    background-color: steelblue; /* Fondo blanco para mejor contraste */
+    color: black; /* Color del texto */
+    overflow-y: auto; /* Agregar scroll si es necesario */
+}
+
+.container .row100 .inputbox textarea:focus + .text,
+.container .row100 .inputbox textarea:focus + .text {
+    top: -35px;
+    left: -10px;
+}
+
+.container .row100 .inputbox textarea:valid ~ .line,
+.container .row100 .inputbox textarea:valid ~ .line{
+
+    height: 100%;
+}
+
+input[type="submit"] {
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background-color: steelblue;
+    color: white; /* Cambiado a blanco para contraste */
+    font-size: 1.2rem;
+    border-radius: 2rem;
+}

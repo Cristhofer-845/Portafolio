@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/aprendiendo.css">
+    <title>Línea de Tiempo de Aprendizaje</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="desktop-nav">
+        <div class="logo"><img class="logo-img" src="../assets/logo.webp" alt=""></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="../Views/Index.html">Inicio</a></li>
+                <li><a href="../Views/Servicios.html">Servicios</a></li>
+                <li><a href="../Views/Aprendiendo.html">Aprendiendo</a></li>
+                <li><a href="../Views/Contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"><img class="logo-img" src="../assets/logo.webp" alt=""></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links" style="z-index: 99;">
+                <li><a href="../Views/Index.html" onclick="toggleMenu()">Inicio</a></li>
+                <li><a href="../Views/Servicios.html" onclick="toggleMenu()">Servicios</a></li>
+                <li><a href="../Views/Proyectos.html" onclick="toggleMenu()">Proyectos</a></li>
+                <li><a href="../Views/Contacto.html" onclick="toggleMenu()">Contacto</a></li>
+            </div>
+        </div>
+    </nav>
+    <div class="intro">
+        <h1 class="title">Tecnologías Próximas a Aprender</h1>
+        <p class="section__text__p1">En esta línea de tiempo, te presento las tecnologías que tengo planeado aprender en los próximos meses. Cada una de ellas representa una oportunidad para expandir mis habilidades y conocimientos en desarrollo de software, especialmente en el ecosistema .NET y el desarrollo web. A medida que avance en mi aprendizaje, espero aplicar estas tecnologías en proyectos futuros y así mejorar mis capacidades como desarrollador.</p>
+    </div>
+    
+    <div class="timeline">
+        <div class="container left-container">
+            <img src="../assets/c-sharp.png" alt="">
+            <div class="text-box">
+                <h2>.NET API Full</h2>
+                <small>Noviembre</small>
+                <p>Crear una API robusta para entender bien las bases con patrones de diseño - Proyecto Villas.</p>
+                <span class="left-container-arrow"></span>
+                <br>
+                <small><a href="https://www.flaticon.com/authors/freepik">freepik-logo</a></small>
+            </div>
+        </div>
+
+        <div class="container right-container">
+            <img src="../assets/blazor.png" alt="Blazor logo">
+            <div class="text-box">
+                <h2>Blazor</h2>
+                <small>Noviembre</small>
+                <p>Aprender las bases e integración en el entorno .NET.</p>
+                <span class="right-container-arrow"></span>
+                <br>
+                <small><a href="https://www.flaticon.com/authors/pocike">pocike-logo</a></small>
+            </div>
+        </div>
+
+        <div class="container left-container">
+            <img src="../assets/js.png" alt="JavaScript logo">
+            <div class="text-box">
+                <h2>JavaScript</h2>
+                <small>Noviembre</small>
+                <p>Terminar proyectos iniciados en octubre, además del consumo de APIs en JavaScript puro.</p>
+                <span class="left-container-arrow"></span>
+                <br>
+                <small><a href="https://www.flaticon.com/authors/freepik">freepik-logo</a></small>
+            </div>
+        </div>
+
+        <div class="container right-container">
+            <img src="../assets/angular.png" alt="Angular logo">
+            <div class="text-box">
+                <h2>Angular</h2>
+                <small>Diciembre</small>
+                <p>Comprender las bases e historia del framework.</p>
+                <span class="right-container-arrow"></span>
+                <br>
+                <small><a href="https://www.flaticon.com/authors/pocike">pocike-logo</a></small>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../Scripts/responsive.js"></script>
+</html>
